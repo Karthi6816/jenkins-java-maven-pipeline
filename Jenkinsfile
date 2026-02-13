@@ -1,11 +1,6 @@
 pipeline {
     agent { label 'Jenkins-node' }
 
-    tools {
-        maven 'MyMaven' // Ensure this version is configured in Jenkins
-        jdk 'MyJDK'      // Ensure this JDK version is configured in Jenkins
-    }
-    
     stages {
         stage('Checkout') {
             steps {
