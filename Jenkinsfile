@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'Jenkins-node' }
 
     tools {
         maven 'MyMaven' // Ensure this version is configured in Jenkins
